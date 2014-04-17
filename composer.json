@@ -2,12 +2,6 @@
     "name": "harrylyu/wti-utils",
     "description": "WTI Developers Tools",
     "minimum-stability": "dev",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "http://packages.lingualeo-funk.com"
-        }
-    ],
     "require": {
         "php": ">=5.4",
         "lingualeo/wti-api": ">=1.9.5",
