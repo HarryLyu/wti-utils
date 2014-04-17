@@ -1,0 +1,21 @@
+{
+    "name": "harrylyu/wti-utils",
+    "description": "WTI Developers Tools",
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.lingualeo-funk.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "lingualeo/wti-api": ">=1.9.5",
+        "wp-cli/php-cli-tools": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "LinguaLeo": "src/"
+        }
+    }
+}
