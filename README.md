@@ -1,17 +1,13 @@
 wti-utils
 =========
-
 Необходимо установить composer: https://getcomposer.org/download/
-
 ## Установка:
 <pre>
 curl -sS https://getcomposer.org/installer | php
 git checkout https://github.com/HarryLyu/wti-utils.git
 composer update
 </pre>
-
 ## Использование:
-
 ### Сохранение комментариев:
 <pre>
 php src/LinguaLeo/Tools/wti/Tasks/SaveWtiCommentsTask.php WTI_API_KEY
