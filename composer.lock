@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/LinguaLeo/wti-api.git",
-                "reference": "759fc813dcb284ec44c80ea7242b1dfb70b117d1"
+                "reference": "a46f61f629c4c91d3d8ba47eea9023c189542516"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LinguaLeo/wti-api/zipball/759fc813dcb284ec44c80ea7242b1dfb70b117d1",
-                "reference": "759fc813dcb284ec44c80ea7242b1dfb70b117d1",
+                "url": "https://api.github.com/repos/LinguaLeo/wti-api/zipball/a46f61f629c4c91d3d8ba47eea9023c189542516",
+                "reference": "a46f61f629c4c91d3d8ba47eea9023c189542516",
                 "shasum": ""
             },
             "require": {
@@ -43,7 +43,7 @@
                 }
             ],
             "description": "PHP Library to work with WebTranslateIt API",
-            "time": "2014-04-17 20:23:55"
+            "time": "2014-04-18 12:04:28"
         },
         {
             "name": "wp-cli/php-cli-tools",

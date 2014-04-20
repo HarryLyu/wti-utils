@@ -4,7 +4,7 @@ namespace LinguaLeo\Tools\wti\Tasks;
 
 require __DIR__ . '/../../../../../vendor/autoload.php';
 
-use LinguaLeo\Tools\WtiTask;
+use LinguaLeo\Tools\wti\Tasks;
 
 class SaveWtiCommentsTask extends WtiTask
 {
