@@ -34,6 +34,12 @@ class UpdateSegmentsNotInFileTask extends WtiTask
                 foreach ($fileStrings as $key => $value) {
                     $fetchedStrings = $this->wti->getStringsByKey($key, null);
 
+                    if (is_object($fetchedStrings) && $fetchedStrings->error) {
+                        $this->writeLine($fetchedStrings->error);
+                        exit;
+                    }
+
+
                     foreach ($fetchedStrings as $fetchedString) {
                         if ($fetchedString->file->id != null) {
                             continue;

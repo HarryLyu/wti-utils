@@ -42,6 +42,11 @@ class SaveWtiCommentsTask extends WtiTask
 
             $strings = $this->wti->getStringsByKey(null, $projectFile->id);
 
+            if (is_object($strings) && $strings->error) {
+                $this->writeLine($strings->error);
+                exit;
+            }
+
             foreach ($strings as $string) {
                 if (!$string->dev_comment && !$string->labels) {
                     continue;
