@@ -45,4 +45,5 @@ class CleanWtiCommentsTask extends WtiTask
     }
 }
 
-(new CleanWtiCommentsTask())->run($argv);
+$task = new CleanWtiCommentsTask();
+$task->run($argv);

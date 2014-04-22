@@ -56,4 +56,5 @@ class UpdateSegmentsNotInFileTask extends WtiTask
     }
 }
 
-(new UpdateSegmentsNotInFileTask())->run($argv);
+$task = new UpdateSegmentsNotInFileTask();
+$task->run($argv);

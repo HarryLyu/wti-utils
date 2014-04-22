@@ -76,4 +76,5 @@ class SaveWtiCommentsTask extends WtiTask
     }
 }
 
-(new SaveWtiCommentsTask())->run($argv);
+$task = new SaveWtiCommentsTask();
+$task->run($argv);

@@ -25,11 +25,24 @@ class SaveSegmentsNotInFileTask extends WtiTask
             return;
         }
 
+        if (is_object($strings) && $strings->error) {
+            $this->writeLine($strings->error);
+            exit;
+        }
+
         $translations = [];
 
         foreach ($strings as $string) {
+            if ($string->status === 'Obsolete') {
+                continue;
+            }
             $translation = $this->wti->getTranslation($string->id, $this->wti->getProjectInfo()->source_locale->code);
             $translations[$string->key] = $translation->text;
+        }
+
+        if (!count($translations)) {
+            $this->writeLine('There are no segments not in files!');
+            exit;
         }
 
         $folderName = $this->getFolderName();
@@ -55,4 +68,5 @@ class SaveSegmentsNotInFileTask extends WtiTask
     }
 }
 
-(new SaveSegmentsNotInFileTask())->run($argv);
+$task = new SaveSegmentsNotInFileTask();
+$task->run($argv);

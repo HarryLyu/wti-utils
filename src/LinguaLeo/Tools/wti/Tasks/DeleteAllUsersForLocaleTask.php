@@ -68,4 +68,5 @@ class DeleteAllUsersForLocaleTask extends Task
     }
 }
 
-(new DeleteAllUsersForLocaleTask())->run($argv);
+$task = new DeleteAllUsersForLocaleTask();
+$task->run($argv);
