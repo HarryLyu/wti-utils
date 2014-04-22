@@ -18,22 +18,22 @@ abstract class Task
 
     protected function writeLine($string)
     {
-        \cli\line($string);
+        echo $string . PHP_EOL;
     }
 
     protected function error($string)
     {
-        \cli\err($string);
+        echo 'ERR ' . $string . PHP_EOL;
     }
 
     protected function write($string)
     {
-        \cli\out($string);
+        echo $string;
     }
 
     protected function read()
     {
-        return \cli\input();
+        return fgets(STDIN);
     }
 
     protected function getArgument($index)
